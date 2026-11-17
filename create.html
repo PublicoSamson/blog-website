@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevNotes | Write Post</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">DevNotes</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="create.html" class="active">Write Post</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <h1>Create a New Quote Post</h1>
+    <form id="post-form" class="card form-card">
+      <label for="author">Your Name</label>
+      <input type="text" id="author" placeholder="e.g., Alex Rivera" required />
+
+      <label for="title">Post Title</label>
+      <input type="text" id="title" placeholder="Enter an engaging title..." required />
+
+      <label for="content">Content</label>
+      <textarea id="content" rows="6" placeholder="Write your thoughts here..." required></textarea>
+
+      <button type="submit" class="btn-primary">Publish Post</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
